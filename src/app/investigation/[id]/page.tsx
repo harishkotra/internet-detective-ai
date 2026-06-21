@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { useParams } from "next/navigation";
-import { InvestigationReport } from "@/lib/types";
+import type { InvestigationReport } from "@/lib/types";
 import { DigitalProfileSummary } from "@/components/report/DigitalProfileSummary";
 import { FactsSection } from "@/components/report/FactsSection";
 import { StrongSignalsSection } from "@/components/report/StrongSignalsSection";
@@ -25,13 +25,24 @@ export default function InvestigationPage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const stored = localStorage.getItem(`investigation_${params.id}`);
+    const id = params.id as string;
+
+    const stored = localStorage.getItem(`investigation_${id}`);
     if (stored) {
       setReport(JSON.parse(stored));
       setLoading(false);
-    } else {
-      setLoading(false);
+      return;
     }
+
+    const fromRedirect = localStorage.getItem(`investigation_redirect_${id}`);
+    if (fromRedirect) {
+      localStorage.removeItem(`investigation_redirect_${id}`);
+      setReport(JSON.parse(fromRedirect));
+      setLoading(false);
+      return;
+    }
+
+    setLoading(false);
   }, [params.id]);
 
   if (loading) return <LoadingInvestigation />;

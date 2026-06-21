@@ -76,6 +76,10 @@ export function InvestigationForm() {
       }
 
       const data = await res.json();
+      localStorage.setItem(
+        `investigation_${data.report.id}`,
+        JSON.stringify(data.report),
+      );
       router.push(`/investigation/${data.report.id}`);
     } catch (err) {
       setError(err instanceof Error ? err.message : "Something went wrong");
