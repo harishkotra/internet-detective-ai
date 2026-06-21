@@ -55,40 +55,31 @@ export class CareerPredictorAgent extends BaseAgent {
   async process(
     input: CareerPredictorInput,
   ): Promise<{ output: CareerPrediction; trace: AgentTrace }> {
-    return this.safeProcess<CareerPrediction>(
-      async () => {
-        const startTime = new Date().toISOString();
-        const start = performance.now();
+    return this.safeProcess<CareerPrediction>(async () => {
+      const startTime = new Date().toISOString();
+      const start = performance.now();
 
-        const userPrompt = this.buildPrompt(input.context, input.strongSignals);
-        const { parsed, trace } =
-          await this.callAIJSON<CareerPrediction>(userPrompt);
+      const userPrompt = this.buildPrompt(input.context, input.strongSignals);
+      const { parsed, trace } =
+        await this.callAIJSON<CareerPrediction>(userPrompt);
 
-        const validated = this.validateOutput(parsed);
+      const validated = this.validateOutput(parsed);
 
-        const endTime = new Date().toISOString();
-        const latency = performance.now() - start;
+      const endTime = new Date().toISOString();
+      const latency = performance.now() - start;
 
-        const agentTrace: AgentTrace = {
-          ...trace,
-          agentName: this.config.name,
-          input: { signalCount: input.strongSignals.length },
-          output: validated,
-          latency,
-          startTime,
-          endTime,
-        };
+      const agentTrace: AgentTrace = {
+        ...trace,
+        agentName: this.config.name,
+        input: { signalCount: input.strongSignals.length },
+        output: validated,
+        latency,
+        startTime,
+        endTime,
+      };
 
-        return { output: validated, trace: agentTrace };
-      },
-      {
-        nextRole: "Unknown — prediction failed",
-        industryDirection: "Unknown",
-        leadershipPotential: 0,
-        futureOpportunities: [],
-        confidence: 0,
-      },
-    );
+      return { output: validated, trace: agentTrace };
+    });
   }
 
   private buildPrompt(

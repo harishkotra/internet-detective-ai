@@ -98,32 +98,7 @@ export abstract class BaseAgent {
 
   protected async safeProcess<T>(
     processFn: () => Promise<{ output: T; trace: AgentTrace }>,
-    fallbackOutput: T,
   ): Promise<{ output: T; trace: AgentTrace }> {
-    try {
-      return await processFn();
-    } catch (error) {
-      const now = new Date().toISOString();
-      const errorMessage =
-        error instanceof Error ? error.message : String(error);
-      return {
-        output: fallbackOutput,
-        trace: {
-          agentId: generateId(),
-          agentName: this.config.name,
-          input: null,
-          output: fallbackOutput,
-          latency: 0,
-          tokenUsage: { promptTokens: 0, completionTokens: 0, totalTokens: 0 },
-          cost: 0,
-          model: this.config.model || "unknown",
-          provider: "unknown",
-          startTime: now,
-          endTime: now,
-          success: false,
-          error: errorMessage,
-        },
-      };
-    }
+    return await processFn();
   }
 }

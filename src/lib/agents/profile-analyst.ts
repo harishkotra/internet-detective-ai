@@ -59,35 +59,32 @@ export class ProfileAnalystAgent extends BaseAgent {
   async process(
     input: ProfileAnalystInput,
   ): Promise<{ output: ProfileAnalystOutput; trace: AgentTrace }> {
-    return this.safeProcess<ProfileAnalystOutput>(
-      async () => {
-        const startTime = new Date().toISOString();
-        const start = performance.now();
+    return this.safeProcess<ProfileAnalystOutput>(async () => {
+      const startTime = new Date().toISOString();
+      const start = performance.now();
 
-        const userPrompt = this.buildPrompt(input.context);
-        const { parsed, trace } =
-          await this.callAIJSON<ProfileAnalystOutput>(userPrompt);
+      const userPrompt = this.buildPrompt(input.context);
+      const { parsed, trace } =
+        await this.callAIJSON<ProfileAnalystOutput>(userPrompt);
 
-        const validated = this.validateOutput(parsed);
+      const validated = this.validateOutput(parsed);
 
-        const endTime = new Date().toISOString();
-        const latency = performance.now() - start;
+      const endTime = new Date().toISOString();
+      const latency = performance.now() - start;
 
-        const agentTrace: AgentTrace = {
-          ...trace,
-          agentId: trace.agentId,
-          agentName: this.config.name,
-          input: { contextHash: this.hashContext(input.context) },
-          output: validated,
-          latency,
-          startTime,
-          endTime,
-        };
+      const agentTrace: AgentTrace = {
+        ...trace,
+        agentId: trace.agentId,
+        agentName: this.config.name,
+        input: { contextHash: this.hashContext(input.context) },
+        output: validated,
+        latency,
+        startTime,
+        endTime,
+      };
 
-        return { output: validated, trace: agentTrace };
-      },
-      { facts: [], digitalProfileSummary: "Failed to analyze profile." },
-    );
+      return { output: validated, trace: agentTrace };
+    });
   }
 
   private buildPrompt(context: ContextPack): string {

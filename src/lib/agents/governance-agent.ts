@@ -70,43 +70,40 @@ export class GovernanceAgent extends BaseAgent {
   async process(
     input: GovernanceAgentInput,
   ): Promise<{ output: GovernanceCheck; trace: AgentTrace }> {
-    return this.safeProcess<GovernanceCheck>(
-      async () => {
-        const startTime = new Date().toISOString();
-        const start = performance.now();
+    return this.safeProcess<GovernanceCheck>(async () => {
+      const startTime = new Date().toISOString();
+      const start = performance.now();
 
-        const userPrompt = this.buildPrompt(input);
-        const { parsed, trace } =
-          await this.callAIJSON<GovernanceAgentOutput>(userPrompt);
+      const userPrompt = this.buildPrompt(input);
+      const { parsed, trace } =
+        await this.callAIJSON<GovernanceAgentOutput>(userPrompt);
 
-        const validated = this.validateOutput(parsed);
+      const validated = this.validateOutput(parsed);
 
-        const check: GovernanceCheck = {
-          passed: validated.passed,
-          violations: validated.violations,
-          checkedAt: new Date().toISOString(),
-        };
+      const check: GovernanceCheck = {
+        passed: validated.passed,
+        violations: validated.violations,
+        checkedAt: new Date().toISOString(),
+      };
 
-        const endTime = new Date().toISOString();
-        const latency = performance.now() - start;
+      const endTime = new Date().toISOString();
+      const latency = performance.now() - start;
 
-        const agentTrace: AgentTrace = {
-          ...trace,
-          agentName: this.config.name,
-          input: {
-            factCount: input.facts.length,
-            signalCount: input.strongSignals.length,
-          },
-          output: check,
-          latency,
-          startTime,
-          endTime,
-        };
+      const agentTrace: AgentTrace = {
+        ...trace,
+        agentName: this.config.name,
+        input: {
+          factCount: input.facts.length,
+          signalCount: input.strongSignals.length,
+        },
+        output: check,
+        latency,
+        startTime,
+        endTime,
+      };
 
-        return { output: check, trace: agentTrace };
-      },
-      { passed: true, violations: [], checkedAt: new Date().toISOString() },
-    );
+      return { output: check, trace: agentTrace };
+    });
   }
 
   private buildPrompt(input: GovernanceAgentInput): string {

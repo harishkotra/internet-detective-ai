@@ -91,34 +91,31 @@ export class SignalDetectorAgent extends BaseAgent {
   async process(
     input: SignalDetectorInput,
   ): Promise<{ output: SignalDetectorOutput; trace: AgentTrace }> {
-    return this.safeProcess<SignalDetectorOutput>(
-      async () => {
-        const startTime = new Date().toISOString();
-        const start = performance.now();
+    return this.safeProcess<SignalDetectorOutput>(async () => {
+      const startTime = new Date().toISOString();
+      const start = performance.now();
 
-        const userPrompt = this.buildPrompt(input.context, input.facts);
-        const { parsed, trace } =
-          await this.callAIJSON<SignalDetectorOutput>(userPrompt);
+      const userPrompt = this.buildPrompt(input.context, input.facts);
+      const { parsed, trace } =
+        await this.callAIJSON<SignalDetectorOutput>(userPrompt);
 
-        const validated = this.validateOutput(parsed);
+      const validated = this.validateOutput(parsed);
 
-        const endTime = new Date().toISOString();
-        const latency = performance.now() - start;
+      const endTime = new Date().toISOString();
+      const latency = performance.now() - start;
 
-        const agentTrace: AgentTrace = {
-          ...trace,
-          agentName: this.config.name,
-          input: { factCount: input.facts.length },
-          output: validated,
-          latency,
-          startTime,
-          endTime,
-        };
+      const agentTrace: AgentTrace = {
+        ...trace,
+        agentName: this.config.name,
+        input: { factCount: input.facts.length },
+        output: validated,
+        latency,
+        startTime,
+        endTime,
+      };
 
-        return { output: validated, trace: agentTrace };
-      },
-      { strongSignals: [], hiddenObsessions: [] },
-    );
+      return { output: validated, trace: agentTrace };
+    });
   }
 
   private buildPrompt(context: ContextPack, facts: Fact[]): string {

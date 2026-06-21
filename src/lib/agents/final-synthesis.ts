@@ -143,7 +143,7 @@ export class FinalSynthesisAgent extends BaseAgent {
       };
 
       return { output: report, trace: agentTrace };
-    }, this.buildFallbackReport(input));
+    });
   }
 
   private buildPrompt(input: FinalSynthesisInput): string {
@@ -324,42 +324,6 @@ Generate personality scores, cooked level, 5 wild guesses, and a final verdict. 
       wildGuesses: Array.isArray(output.wildGuesses) ? output.wildGuesses : [],
       finalVerdict:
         output.finalVerdict || "An enigmatic figure in the tech landscape.",
-    };
-  }
-
-  private buildFallbackReport(input: FinalSynthesisInput): InvestigationReport {
-    return {
-      id: generateId(),
-      profileHash: this.hashProfile(input.context),
-      digitalProfileSummary: this.buildSummary(input.facts),
-      facts: input.facts,
-      strongSignals: input.strongSignals,
-      hiddenObsessions: input.hiddenObsessions,
-      coworkerQuotes: input.coworkerQuotes,
-      startupParody: input.startupParody,
-      careerPrediction: input.careerPrediction,
-      brutalRoast: input.roasts,
-      wildGuesses: this.ensureWildGuesses([]),
-      finalVerdict: "An investigation was conducted.",
-      personalityScores: {
-        builderScore: 50,
-        operatorScore: 50,
-        creatorScore: 50,
-        founderScore: 50,
-        chaosScore: 50,
-      },
-      cookedLevel: "Mildly Cooked" as CookedLevel,
-      metadata: {
-        model: "gpt-4o",
-        provider: "fallback",
-        latency: input.totalLatency,
-        tokenUsage: input.allTokenUsage,
-        cost: 0,
-        promptVersion: "1.0.0",
-        governancePassed: false,
-        safetyChecked: false,
-        generatedAt: new Date().toISOString(),
-      },
     };
   }
 }
