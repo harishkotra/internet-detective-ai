@@ -27,15 +27,16 @@ export class ZenProvider extends BaseProvider {
           model: request.model || this.config.defaultModel,
           messages: request.messages,
           temperature: request.temperature ?? this.config.temperature ?? 0.7,
-          max_tokens: request.maxTokens ?? this.config.maxTokens ?? 4096,
-          response_format:
-            request.responseFormat?.type === "json_object"
-              ? { type: "json_object" }
-              : undefined,
+          max_tokens: request.maxTokens ?? this.config.maxTokens ?? 8192,
         });
 
+        if (!response.choices || !response.choices[0]) {
+          const errMsg = `API returned no choices. Response: ${JSON.stringify(response).slice(0, 500)}`;
+          throw new Error(errMsg);
+        }
+
         const choice = response.choices[0];
-        const content = choice?.message?.content ?? "";
+        const content = choice.message?.content ?? "";
 
         return {
           content,

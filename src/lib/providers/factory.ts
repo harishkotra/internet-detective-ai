@@ -21,8 +21,8 @@ function loadConfig(): Record<ProviderType, ProviderRegistration> {
       constructor: ZenProvider,
       config: {
         apiKey: process.env.ZEN_API_KEY!,
-        baseUrl: process.env.ZEN_BASE_URL || "https://api.opencode.ai/v1",
-        defaultModel: process.env.ZEN_MODEL || "deepseek-v3",
+        baseUrl: process.env.ZEN_BASE_URL || "https://opencode.ai/zen/v1",
+        defaultModel: process.env.ZEN_MODEL || "deepseek-v4-flash",
         maxTokens: 8192,
         temperature: 0.7,
       },
