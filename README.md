@@ -1,12 +1,8 @@
-# 🔍 Internet Detective AI
+# Internet Detective AI
 
 > *"We Analyzed Your Entire Internet Personality."*
 
-[Live Demo](https://internet-detective-ai.vercel.app) · [Documentation](./docs) · [Report Bug](https://github.com/harishkotra/internet-detective-ai/issues)
-
----
-
-## 🎯 The Product
+## The Product
 
 Paste your LinkedIn, GitHub, Twitter, resume — get a brutally honest AI investigation of your entire internet personality.
 
@@ -32,7 +28,7 @@ Combines the energy of:
 
 ---
 
-## 🏗️ The Architecture
+## The Architecture
 
 [Full Architecture Docs](./docs/14-production-architecture.md)
 
@@ -79,7 +75,7 @@ Zen · OpenAI · Anthropic · Gemini · OpenRouter · Featherless · Ollama
 
 ---
 
-## 🧠 AI Engineering Showcase
+## AI Engineering Showcase
 
 This repo demonstrates 14 areas of production AI engineering:
 
@@ -163,7 +159,7 @@ evals/                 # 4 evaluation datasets (20 profiles)
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 This project is designed to be forked, extended, and learned from.
 
@@ -184,13 +180,3 @@ This project is designed to be forked, extended, and learned from.
 3. Prompts live in `prompts/system/` as markdown
 4. Types are centralized in `src/lib/types.ts`
 5. Run `npm run lint` before committing
-
----
-
-## 📄 License
-
-MIT
-
----
-
-Built by [Harish Kotra](https://harishkotra.me) · [Check out my other builds](https://dailybuild.xyz)
