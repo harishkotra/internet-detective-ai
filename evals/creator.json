@@ -1,0 +1,112 @@
+[
+  {
+    "id": "creator-1",
+    "name": "Tech YouTuber",
+    "description": "Tutorial focused",
+    "input": {
+      "linkedinUrl": "https://linkedin.com/in/jake-hoffman-youtube",
+      "githubUrl": "https://github.com/jakehoffman",
+      "twitterUrl": "https://x.com/jakehoffman_dev",
+      "rawProfileText": "Jake Hoffman is a full-time tech YouTuber with 480,000 subscribers on his channel 'CodeWithJake' where he publishes weekly tutorials about full-stack web development, system design, and career advice for software engineers. His most popular video 'Build a SaaS from Scratch in 6 Hours' has 2.3 million views. He started his channel as a side hustle while working as a mid-level developer at a SaaS company, posting videos after work and on weekends for 2 years before going full-time when his channel hit 100k subscribers and ad revenue covered his salary. Before YouTube, Jake worked as a software engineer for 4 years — 2 years at a digital agency building React sites and 2 years at a health tech startup where he was the lead backend engineer. He has a B.S. in Computer Science from University of Texas at Austin. Jake's content style is characterized by fast-paced editing with jump cuts, a blue Yeti microphone, and a distinctive intro animation. He livestreams coding sessions every Saturday and has built a community of 8,000 members on his Discord server where he answers career questions and reviews resumes. He monetizes through YouTube ad revenue (currently ~$15k/month), a Patreon with 1,200 supporters ($8k/month), a sponsored deal with a VPN company, and a course platform called 'Code Pro' where he sells a full-stack bootcamp for $499 that has generated $200k in revenue. Jake has been criticized for selling a 'learn to code' course despite having limited industry experience, which he addressed in a video titled 'I'm Not A Senior Engineer — And That's Okay' that received 800,000 views. He is transparent about his earnings and posts monthly income reports. Jake is active on Twitter where he posts short coding tips and threads about the creator economy. He recently hired an editor and a community manager to help scale his content production. He is planning to launch a physical notebook for developers called 'The Codebook' through a Kickstarter campaign. Jake has a love-hate relationship with the YouTube algorithm and tweets about it constantly. He lives in Austin with a ring light permanently set up in his home office and owns an unreasonable number of mechanical keyboards that appear in his videos. He is currently learning Rust for a video series and is already 6 episodes behind schedule."
+    },
+    "expectedOutputs": {
+      "minFacts": 14,
+      "keySignals": ["content creator", "YouTuber", "educator", "community builder", "entrepreneurial"],
+      "expectedScores": {
+        "builderScore": { "min": 40, "max": 65 },
+        "operatorScore": { "min": 45, "max": 70 },
+        "creatorScore": { "min": 80, "max": 100 },
+        "founderScore": { "min": 50, "max": 75 },
+        "chaosScore": { "min": 25, "max": 50 }
+      }
+    }
+  },
+  {
+    "id": "creator-2",
+    "name": "Developer Advocate",
+    "description": "Community builder",
+    "input": {
+      "linkedinUrl": "https://linkedin.com/in/naomi-okonkwo-devrel",
+      "githubUrl": "https://github.com/naomiokonkwo",
+      "twitterUrl": "https://x.com/naomi_devrel",
+      "rawProfileText": "Naomi Okonkwo is a Senior Developer Advocate at Supabase with 8 years of experience in developer relations and community building. She is responsible for creating technical content, speaking at conferences, engaging with the open source community, and gathering developer feedback to inform product decisions. She joined Supabase when they were 10 people and has helped grow the developer community from 5,000 to over 300,000 developers. Before DevRel, Naomi was a backend engineer at Twilio for 3 years where she built SMS API integrations, and before that she was a software engineer at a logistics startup. She holds a B.Eng in Computer Engineering from University of Lagos. Naomi produces a wide range of content: she writes technical blog posts that average 30,000 reads, creates video tutorials for the Supabase YouTube channel (75k subscribers), hosts a weekly live stream called 'Supabase Office Hours', and maintains example projects in the Supabase GitHub organization. Her most popular tutorial 'Build a Realtime Chat App with Supabase in 20 Minutes' has 400,000 views. She has spoken at 25+ conferences including PostgresConf, All Things Open, DevRelCon, and JSConf, consistently getting high ratings for her engaging presentation style and practical demos. Naomi is a co-organizer of the Lagos Open Source Meetup and runs a mentorship program for aspiring developer advocates from underrepresented backgrounds called 'DevRel Pathways', which has placed 15 DevRel practitioners in full-time roles. She is known for her authentic approach to developer relations — she once tweeted a thread about a production incident Supabase had, and the honest post-mortem went viral and actually improved community trust. She writes a newsletter 'DevRel Diaries' with 10,000 subscribers where she shares lessons from the trenches of developer relations: the challenges of balancing content creation with code, dealing with toxic community members, and strategies for measuring DevRel ROI. Naomi has strong opinions about the term 'DevRel' and prefers 'Developer Experience'. She advocates for treating documentation as a product surface and has built several internal tools at Supabase for improving DX. She is active on Twitter where she posts code snippets, hot takes about API design, and behind-the-scenes of conference speaking. She has a 2,300-day streak on GitHub and is determined not to break it."
+    },
+    "expectedOutputs": {
+      "minFacts": 14,
+      "keySignals": ["developer advocate", "conference speaker", "community builder", "content creator", "open source contributor"],
+      "expectedScores": {
+        "builderScore": { "min": 40, "max": 65 },
+        "operatorScore": { "min": 45, "max": 70 },
+        "creatorScore": { "min": 80, "max": 100 },
+        "founderScore": { "min": 40, "max": 65 },
+        "chaosScore": { "min": 20, "max": 45 }
+      }
+    }
+  },
+  {
+    "id": "creator-3",
+    "name": "Technical Writer",
+    "description": "Documentation expert",
+    "input": {
+      "linkedinUrl": "https://linkedin.com/in/emily-zhang-tech-writer",
+      "githubUrl": "https://github.com/emilyzhang",
+      "twitterUrl": "https://x.com/emilywritesdocs",
+      "rawProfileText": "Emily Zhang is a Senior Technical Writer at Stripe with 7 years of experience crafting developer documentation. She is the primary author of Stripe's API reference documentation and wrote the widely-praised 'Stripe Documentation Style Guide' that has been adopted by dozens of API-first companies. She previously worked at Twilio as a technical writer where she documented the Twilio SendGrid API, and at a startup called ReadMe where she was the first technical writer hired. Before specializing in technical writing, Emily worked as a frontend developer for 2 years, which gives her an empathetic perspective on what developers need from documentation. She holds a B.A. in English Literature from Columbia University and a certificate in Technical Communication from UC San Diego Extension. Emily is the creator of 'DocStruct', an open-source documentation framework and static site generator written in Rust that produces beautifully formatted API docs from OpenAPI specifications. It has 2,500 stars on GitHub and is used by 200+ companies including几家 YC startups. She also maintains 'Vale Prose', a collection of custom Vale linting rules for technical writing that enforces inclusive language and clarity. Emily writes extensively about the craft of documentation. Her blog 'Docs as Code' (4,500 subscribers) covers topics like information architecture, writing for international audiences, and the economics of good documentation. Her article 'API Documentation Is UX' was featured in the Society for Technical Communication's Intercom magazine and won an excellence award. She speaks at Write the Docs, API Specifications Conference, and DevRelCon about documentation-as-code workflows, API design for documentation, and the career path of technical writing in tech. Emily is a passionate advocate for technical writing as a serious engineering discipline. She argues that documentation should be treated as a product with SLAs, testing, and continuous deployment. She once submitted a PR to a major open-source project fixing 43 typos and documentation inconsistencies, which was merged but the maintainers asked her to 'please batch these into fewer commits'. She runs a workshop called 'Writing for Developers' that has trained 200+ engineers at companies like Stripe and GitHub. On Twitter, she posts before-and-after documentation transformations and threads about common documentation mistakes. She has a reputation for being able to spot a missing Oxford comma from across the room. Emily owns an extensive collection of style guides and reads Strunk & White for fun."
+    },
+    "expectedOutputs": {
+      "minFacts": 14,
+      "keySignals": ["technical writer", "open source contributor", "conference speaker", "documentation expert", "developer experience advocate"],
+      "expectedScores": {
+        "builderScore": { "min": 30, "max": 55 },
+        "operatorScore": { "min": 30, "max": 55 },
+        "creatorScore": { "min": 75, "max": 95 },
+        "founderScore": { "min": 25, "max": 50 },
+        "chaosScore": { "min": 10, "max": 30 }
+      }
+    }
+  },
+  {
+    "id": "creator-4",
+    "name": "Indie Hacker",
+    "description": "Build in public",
+    "input": {
+      "linkedinUrl": "https://linkedin.com/in/omar-hassan-indie",
+      "githubUrl": "https://github.com/omarhassan",
+      "twitterUrl": "https://x.com/omar_builds",
+      "rawProfileText": "Omar Hassan is an indie hacker and bootstrapper who builds and launches micro-SaaS products in public. He has launched 8 products over the past 4 years, with 2 currently generating recurring revenue and the rest in what he calls 'semi-maintenance zombie mode'. His most successful product is 'ReplyMaster', an AI email reply generator for customer support teams that does $6k MRR with 150 customers. His second product 'StatusGist' — a status page builder for small teams — does $1.2k MRR. Omar documents every step of his journey on Twitter where he has 35,000 followers, posting his revenue numbers, launch metrics, failures, and lessons learned. He shares his entire product lifecycle transparently: from idea validation to landing page to abandoned project. His thread '12 Products in 12 Months: What I Learned' has 1.5 million views. Before going full-time indie, Omar worked as a software engineer at a consulting firm building CRUD apps for enterprise clients for 5 years. He quit his job when his total side project revenue hit $5k/month, which took him 18 months of nights and weekends. Omar is proficient in Ruby on Rails, Hotwire, Tailwind CSS, and PostgreSQL. He chooses Rails specifically because it lets him ship fast as a solo developer. He writes a popular newsletter 'The Indie Stack' with 8,000 subscribers where he shares his exact tech stack decisions, hosting costs, and architecture diagrams for each of his products. He has given talks at Indie Hacker meetups and MicroConf about sustainable solo entrepreneurship and the mental health challenges of building alone. Omar is known for his extreme transparency — he publishes his monthly P&L statements publicly and has a live dashboard showing his total MRR across all products. He also shares his failures openly: he once spent 6 months building a product that got 3 signups, and he wrote a detailed post-mortem that resonated deeply with the indie hacker community. He runs a small Slack community called 'Ship Club' for other indie hackers to keep each other accountable, with 400 members. Omar lives in Amman, Jordan, and works from a cafe that has become his unofficial office. He has a disciplined daily routine: 6 AM workout, 8 AM-12 PM deep work on product development, 1-3 PM customer support and community, and occasional afternoons for content creation. He is a big believer in the 'small bets' approach and argues that most indie hackers should build 5-10 tiny products before trying to build the next unicorn. On Twitter, he posts daily updates including screenshots of his Stripe dashboard, funny customer emails, and existential questions about whether he should get a real job again."
+    },
+    "expectedOutputs": {
+      "minFacts": 15,
+      "keySignals": ["indie hacker", "bootstrapper", "content creator", "community builder", "solo founder"],
+      "expectedScores": {
+        "builderScore": { "min": 55, "max": 80 },
+        "operatorScore": { "min": 50, "max": 75 },
+        "creatorScore": { "min": 70, "max": 95 },
+        "founderScore": { "min": 55, "max": 80 },
+        "chaosScore": { "min": 30, "max": 55 }
+      }
+    }
+  },
+  {
+    "id": "creator-5",
+    "name": "Bootstrapper",
+    "description": "SaaS founder building in public",
+    "input": {
+      "linkedinUrl": "https://linkedin.com/in/grace-kim-bootstrapper",
+      "githubUrl": "https://github.com/gracekim",
+      "twitterUrl": "https://x.com/gracebuilds",
+      "rawProfileText": "Grace Kim is the founder of 'Fiscally', a bootstrapped accounting software for freelancers and solo business owners that does $1.2M ARR with 8,000 paying customers. She built the first version in 3 months using Laravel and Vue.js while working full-time as a senior backend engineer at Shopify. Fiscally has been profitable since day one and has never taken outside funding. Grace runs the company with a team of 4 full-time employees (all remote) and focuses primarily on product strategy and customer relationships. Before starting Fiscally, Grace worked as a software engineer for 8 years — 4 years at Shopify building merchant-facing features and 4 years at a series of startups where she was the first or second engineering hire. She has a B.S. in Computer Engineering from University of British Columbia. Grace is a prominent voice in the bootstrapped SaaS community. She shares detailed monthly updates about Fiscally's metrics — ARR, churn, LTV, CAC, net revenue retention — along with honest reflections about what's working and what's not. Her transparent approach has earned her 25,000 followers on Twitter and 12,000 newsletter subscribers on 'Bootstrapped & Profitable'. She created a popular free resource called 'SaaS Financial Model Template' that is used by 5,000+ founders. She has spoken at MicroConf, SaaSter, and the Bootstrapped SaaS Conference about building a sustainable, profitable company without venture capital. Her talk 'Why I Chose Profitability Over Growth' is one of the most popular in the bootstrapped circuit. Grace is known for her disciplined, no-nonsense approach to business. She has a famous thread where she explains her 'revenue-first pricing framework' that involves calling every prospect who cancels to understand why. She spends 3 hours every Friday personally responding to customer emails and knows most of her power users by name. She is deeply skeptical of growth-at-all-costs culture and has strong opinions about the B2B SaaS metrics that actually matter. She was an early signatory of the 'Bootstrapper's Manifesto' and is a mentor for TinySeed, the bootstrapper-friendly accelerator. Grace lives in Vancouver and is an avid rock climber. She schedules her work around climbing sessions at the local gym. She has a framed letter on her wall from a customer who said Fiscally saved their freelance business from bankruptcy — she reads it when she questions whether she should keep going. She is currently working on a book called 'The Sustainable Scale: Building a SaaS Business That Lasts'. On Twitter, she threads about the boring fundamentals of SaaS: retention, unit economics, and customer love."
+    },
+    "expectedOutputs": {
+      "minFacts": 14,
+      "keySignals": ["founder", "bootstrapper", "conference speaker", "community leader", "content creator", "mentor"],
+      "expectedScores": {
+        "builderScore": { "min": 60, "max": 85 },
+        "operatorScore": { "min": 60, "max": 85 },
+        "creatorScore": { "min": 60, "max": 85 },
+        "founderScore": { "min": 75, "max": 95 },
+        "chaosScore": { "min": 20, "max": 45 }
+      }
+    }
+  }
+]

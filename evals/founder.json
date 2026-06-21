@@ -1,0 +1,112 @@
+[
+  {
+    "id": "founder-1",
+    "name": "Technical Founder",
+    "description": "Built MVP, raised seed round, technical background",
+    "input": {
+      "linkedinUrl": "https://linkedin.com/in/david-park-tech-founder",
+      "githubUrl": "https://github.com/davidpark",
+      "twitterUrl": "https://x.com/davidpark_builds",
+      "rawProfileText": "David Park is the CTO and co-founder of Lumina, an AI-powered video editing platform for content creators. He built the initial MVP in 6 weeks using Python, FastAPI, and React, handling everything from infrastructure to frontend solo. Lumina raised a $2.5M seed round from a16z and Y Combinator (S23 batch) and now serves 50,000 active users. David leads a team of 12 engineers and personally writes the core video processing pipeline in Rust. Before founding Lumina, David was a Senior Software Engineer at Google working on YouTube's recommendation algorithm for 3 years, and before that at a quantitative trading firm Jane Street where he wrote trading systems in OCaml. He holds a B.S. in Computer Science and Mathematics from MIT. David is an avid builder who maintains 15+ side projects, most of which are abandoned but taught him something. His GitHub is a graveyard of ambitious prototypes including a CRDT-based collaborative editor, a neural network from scratch in C, and a blockchain implementation that he built to understand crypto. He has an unhealthy obsession with reducing latency and once optimized an API endpoint from 200ms to 12ms at 3 AM, then tweeted about it. David is a regular on Hacker News and has had 4 posts hit the front page. He writes technical blog posts about startup engineering and his post 'How I Built an MVP That Didn't Suck' has 50,000 views. He is an angel investor in 8 startups and advises first-time technical founders. David is known for his intense work ethic — he averages 6 hours of sleep and considers 'burnout' a challenge to be optimized away. He has strong opinions about monorepos, believes Tailwind CSS is 'cheating', and uses Neovim with a config file that is 800 lines long. He deleted Twitter 3 times but keeps coming back because he likes the dopamine hits from seeing his product mentioned. His Twitter bio reads 'Building @lumina. Previously @YouTube @JaneStreet. MIT.' — the most startup founder bio possible."
+    },
+    "expectedOutputs": {
+      "minFacts": 14,
+      "keySignals": ["strong technical background", "founder", "fundraising experience", "conference speaker", "community leader"],
+      "expectedScores": {
+        "builderScore": { "min": 80, "max": 100 },
+        "operatorScore": { "min": 50, "max": 75 },
+        "creatorScore": { "min": 55, "max": 80 },
+        "founderScore": { "min": 80, "max": 100 },
+        "chaosScore": { "min": 40, "max": 65 }
+      }
+    }
+  },
+  {
+    "id": "founder-2",
+    "name": "Non-Technical Founder",
+    "description": "Sales/business background, MBA, raised Series A",
+    "input": {
+      "linkedinUrl": "https://linkedin.com/in/amanda-coleman-ceo",
+      "githubUrl": "https://github.com/amandacoleman",
+      "twitterUrl": "https://x.com/amanda_founds",
+      "rawProfileText": "Amanda Coleman is the CEO and co-founder of Relay, a B2B logistics platform that connects independent truckers with freight brokers. Relay has raised $18M in Series A led by Bessemer Venture Partners and serves over 2,000 trucking companies across North America. Amanda handles all business operations — sales, fundraising, marketing, and customer success — while her technical co-founder runs engineering. Prior to founding Relay, Amanda spent 6 years at Salesforce as an Enterprise Account Executive where she consistently hit 150% of quota and was promoted to Regional Director overseeing a $50M book of business. She then earned her MBA from Harvard Business School where she met her co-founder during the Startup Bootcamp elective. Her startup idea came from talking to truckers at a truck stop in Ohio during a road trip after graduation. Amanda is a prolific networker who has built strong relationships with investors, and her Series A was oversubscribed by 2x. She is known for her relentless sales ability: she personally signed Relay's first 50 customers by cold-calling trucking companies from her apartment. She now leads a 40-person team including sales, marketing, and operations. Amanda speaks at logistics industry conferences like Manifest and CSCMP about digitizing freight. She writes a newsletter called 'Founder Stories' where she interviews other non-technical founders about the challenges of building a tech company without a technical background. She recently completed Y Combinator's 'Startup School' as a guest speaker. She lives in Denver and has a husky named 'Term Sheet'. Amanda is brutally honest about the emotional toll of fundraising — she has a viral LinkedIn post about crying in a bathroom after a particularly tough VC meeting that got 10,000 reactions. She collects rejection emails from VCs who passed on Relay and has framed her favorites. Amanda is active on Twitter posting hot takes about SaaS metrics and her ARR progression monthly. She believes that product-market fit is a feeling you get from support tickets going from 'this sucks' to 'this is okay'. She runs a book club for founders reading 'The Hard Thing About Hard Things' for the 5th time."
+    },
+    "expectedOutputs": {
+      "minFacts": 13,
+      "keySignals": ["founder", "fundraising experience", "sales background", "business development"],
+      "expectedScores": {
+        "builderScore": { "min": 25, "max": 50 },
+        "operatorScore": { "min": 60, "max": 85 },
+        "creatorScore": { "min": 40, "max": 65 },
+        "founderScore": { "min": 80, "max": 100 },
+        "chaosScore": { "min": 35, "max": 60 }
+      }
+    }
+  },
+  {
+    "id": "founder-3",
+    "name": "Solo Founder",
+    "description": "Bootstrapped, profitable, all-in-one",
+    "input": {
+      "linkedinUrl": "https://linkedin.com/in/tomás-hernandez-solo",
+      "githubUrl": "https://github.com/tomashernandez",
+      "twitterUrl": "https://x.com/tomas_builds",
+      "rawProfileText": "Tomás Hernandez is a solo founder bootstrapping UserVista, a session recording and heatmap analytics tool for SaaS companies. He built the product over 14 months while working full-time as a senior engineer at a CRM company, then quit when UserVista hit $3k MRR. Two years later, UserVista serves 800 paying customers, has $45k MRR, and is run entirely by Tomás with the help of a part-time support contractor and a freelance designer. He has never taken venture capital and is vocal about his belief that most startups don't need funding — he wrote a popular blog post 'Series A Is A Trap' that went viral on Hacker News. Tomás built UserVista using Elixir/Phoenix for the backend (chosen specifically because he wanted to learn it), React for the frontend, and a custom event processing pipeline written in Rust. He handles all sales, support, infrastructure, and development himself. His average response time to customer support tickets is 12 minutes. Before going solo, Tomás worked at Basecamp for 4 years where he was a full-stack developer and absorbed DHH's philosophy about bootstrapping and calm software. He previously worked at a healthcare startup that burned through $40M and failed, which cemented his belief in sustainable growth. Tomás is active on the Indie Hackers community and shares detailed monthly revenue breakdowns transparently. He maintains a public dashboard of his MRR, churn rate, and customer acquisition channels. He lives in Medellín, Colombia, working from a coffee shop with ocean views. Tomás is extremely opinionated about SaaS pricing and changes his pricing page every 6 weeks to optimize conversion. He once raised prices 3x and only lost 5% of customers. He writes a newsletter called 'Solo Signals' with 5,000 subscribers where he shares tactics for solo SaaS operators. Tomás is active on Twitter where he posts screenshots of interesting support conversations and threads about the realities of solo entrepreneurship — the loneliness, the temptation to raise money, and the freedom of not having investors. His entire business runs on a single $80/month server and he gets genuinely angry when people suggest he needs 'enterprise infrastructure'. He has a strict no-meetings policy and communicates with customers entirely through async channels."
+    },
+    "expectedOutputs": {
+      "minFacts": 14,
+      "keySignals": ["founder", "bootstrapper", "indie hacker", "strong technical background"],
+      "expectedScores": {
+        "builderScore": { "min": 70, "max": 95 },
+        "operatorScore": { "min": 60, "max": 85 },
+        "creatorScore": { "min": 55, "max": 80 },
+        "founderScore": { "min": 75, "max": 95 },
+        "chaosScore": { "min": 30, "max": 55 }
+      }
+    }
+  },
+  {
+    "id": "founder-4",
+    "name": "Serial Entrepreneur",
+    "description": "Multiple exits, investor turned founder",
+    "input": {
+      "linkedinUrl": "https://linkedin.com/in/jennifer-wu-serial",
+      "githubUrl": "https://github.com/jenniferwu",
+      "twitterUrl": "https://x.com/jenniferwu_vc",
+      "rawProfileText": "Jennifer Wu is a serial entrepreneur with three exits under her belt. She founded and sold her first company, a mobile analytics SDK called MetricMate, to Amplitude for $40M when she was 26. Her second venture, Voca — an AI-powered transcription and meeting notes platform — was acquired by Zoom for $120M after 3 years. She then built Dispatch, a customer service automation platform, which went public via SPAC at a $1.2B valuation before she stepped down as CEO in 2023. Jennifer now runs her own family office and VC fund, 'Wu Capital', with $80M AUM, investing in early-stage B2B SaaS and AI infrastructure. She serves on the boards of 6 startups and is an active angel investor in 40+ companies including several YC batches. She started her career as a product manager at Microsoft after graduating with a B.S. in Symbolic Systems from Stanford. Jennifer is a YC alum (S12) and has been a part-time partner at Y Combinator where she advises portfolio companies on go-to-market strategy and fundraising. She is known for her intense pattern recognition — she famously told the founder of a company that later became a unicorn that 'your pricing is off by 10x' during a 5-minute cold email review. Jennifer speaks at conferences like TechCrunch Disrupt, SaaStr, and Startup Grind about founder-market fit and the art of the exit. She writes an email newsletter called 'Exit Signal' that covers M&A trends and has 25,000 subscribers. She is based in San Francisco but spends summers in Mallorca where she runs a founder retreat called 'Unplugged' with no internet access for the first 3 days. Jennifer is famous for her brutally pragmatic founder advice: 'Your startup is not your baby, it's a financial instrument' is her most quoted line. She has a reputation for being intimidating in meetings — she reads pitch decks at 2x speed and asks the one question that exposes the weakness in your model. She is active on Twitter under the handle @jenniferwu_vc where she posts contrarian takes on startup culture and venture capital. She has a corgi named 'Liquidity Event' who has his own Instagram account."
+    },
+    "expectedOutputs": {
+      "minFacts": 14,
+      "keySignals": ["founder", "fundraising experience", "conference speaker", "serial entrepreneur", "investor"],
+      "expectedScores": {
+        "builderScore": { "min": 55, "max": 80 },
+        "operatorScore": { "min": 70, "max": 95 },
+        "creatorScore": { "min": 50, "max": 75 },
+        "founderScore": { "min": 85, "max": 100 },
+        "chaosScore": { "min": 45, "max": 70 }
+      }
+    }
+  },
+  {
+    "id": "founder-5",
+    "name": "University Founder",
+    "description": "Dropped out, YC-backed, hypergrowth",
+    "input": {
+      "linkedinUrl": "https://linkedin.com/in/alex-rivera-founder",
+      "githubUrl": "https://github.com/alexrivera",
+      "twitterUrl": "https://x.com/alexrivera_build",
+      "rawProfileText": "Alex Rivera is the 23-year-old founder and CEO of Cascade, a real-time data synchronization platform for distributed applications. He dropped out of the University of Illinois at Urbana-Champaign halfway through his junior year after Cascade was accepted into Y Combinator (W24). Cascade has since raised $12M in Series A led by Sequoia Capital and serves 3,000 developers with 200 paying enterprise customers including几家 recognizable tech companies. Alex started coding at age 12 building Minecraft plugins and sold his first piece of software — a Discord bot for server moderation — for $500 when he was 15. He built the first version of Cascade over winter break when he was supposed to be studying for finals. The product is now used by several YC startups and the GitHub repo has 4,500 stars. Alex is still technically enrolled at UIUC on an indefinite leave of absence and his mom still asks him when he's going back to finish his degree. He is the youngest person to present at the Sequoia Capital CEO Summit. Alex is active on Twitter and TikTok where he posts content about being a young founder. His TikTok series 'A Day in the Life of a 22-Year-Old CEO' has accumulated over 10 million views. He has a famous thread where he shared his rejected YC application from the previous batch, annotated with what he changed to get accepted. Alex is surrounded by a 20-person team where most engineers are older than him, and he handles this by being unapologetically himself — he wears hoodies to investor meetings and plays Valorant with his engineering team on Friday nights. He lives in a 4-bedroom house in San Francisco with 3 other founders that they call 'The Startup House' and they have a whiteboard in the living room where they write their daily metrics. Alex is known for saying 'age is just a number until you realize everyone in the room has 10 years on you'. He has become an accidental role model for young entrepreneurs and gets dozens of DMs from college students asking how to drop out. He always tells them to finish school first, which is deeply ironic."
+    },
+    "expectedOutputs": {
+      "minFacts": 13,
+      "keySignals": ["founder", "fundraising experience", "young entrepreneur", "conference speaker", "social media presence"],
+      "expectedScores": {
+        "builderScore": { "min": 60, "max": 85 },
+        "operatorScore": { "min": 35, "max": 60 },
+        "creatorScore": { "min": 45, "max": 70 },
+        "founderScore": { "min": 75, "max": 95 },
+        "chaosScore": { "min": 50, "max": 75 }
+      }
+    }
+  }
+]

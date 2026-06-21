@@ -1,0 +1,112 @@
+[
+  {
+    "id": "designer-1",
+    "name": "Product Designer",
+    "description": "Figma expert, design systems",
+    "input": {
+      "linkedinUrl": "https://linkedin.com/in/mia-watanabe-product",
+      "githubUrl": "https://github.com/miawatanabe",
+      "twitterUrl": "https://x.com/mia_designs",
+      "rawProfileText": "Mia Watanabe is a Senior Product Designer at Notion with 7 years of experience designing complex B2B SaaS products. She owns the databases and formulas experience at Notion, designing features used by millions of knowledge workers. Prior to Notion, she was the third design hire at Airtable where she built their component library and design system from scratch serving 30+ designers. She started her career at a design consultancy frog where she worked on projects for Apple, Google, and Ford. Mia is a Figma power user who creates elaborate component systems with auto-layout that make other designers weep with joy. She maintains an open-source Figma plugin called 'Design Token Exporter' that syncs design tokens to GitHub and has over 10,000 users. She is obsessed with design systems and has given talks at Figma's Config conference, Design Systems London, and Clarity about scalable design, cross-platform consistency, and the tension between designer autonomy and system constraints. Mia writes a newsletter called 'Systematic' where she breaks down the design systems of major companies, with 7,000 subscribers. Her post 'How Notion Ships Design at Scale' was read by 40,000 people. She holds a BFA in Graphic Design from Rhode Island School of Design and an HCI certificate from MIT. Mia is known for her meticulous attention to detail — she once redesigned a loading spinner 14 times because the easing curve 'didn't feel right'. She has strong opinions about the difference between a design system and a component library and will explain it to you at length. She uses the terms 'design debt' and 'pixel pushing' unironically. Mia is an advocate for design engineers and believes designers should know how to code, though she admits her own coding ability is limited to HTML/CSS and a 'dangerous' amount of React. She curates a popular collection of design resources on GitHub called 'awesome-design-systems' with 8,000 stars. On Twitter, she posts side-by-side comparisons of bad vs good UX patterns and regularly gets ratioed by developers who disagree with her takes on margin spacing. She has a workspace that is meticulously organized with a vertical monitor for Figma and a Stream Deck configured with Figma shortcuts."
+    },
+    "expectedOutputs": {
+      "minFacts": 13,
+      "keySignals": ["design specialization", "open source contributor", "conference speaker", "community leader", "design systems expert"],
+      "expectedScores": {
+        "builderScore": { "min": 30, "max": 55 },
+        "operatorScore": { "min": 35, "max": 60 },
+        "creatorScore": { "min": 75, "max": 100 },
+        "founderScore": { "min": 35, "max": 60 },
+        "chaosScore": { "min": 15, "max": 40 }
+      }
+    }
+  },
+  {
+    "id": "designer-2",
+    "name": "UI/UX Designer",
+    "description": "User research focused",
+    "input": {
+      "linkedinUrl": "https://linkedin.com/in/oluwaseun-adeyemi-ux",
+      "githubUrl": "https://github.com/oluwaseunadeyemi",
+      "twitterUrl": "https://x.com/seun_ux",
+      "rawProfileText": "Oluwaseun Adeyemi is a UX Designer at Spotify where he leads user research for the podcast discovery experience. He has 5 years of experience in UX design and research, having previously worked at a digital agency R/GA designing for Nike and at a healthcare startup building patient portal interfaces. Oluwaseun is deeply committed to inclusive design and accessibility. He developed Spotify's accessibility audit framework that is now used across all product teams to ensure WCAG 2.2 compliance. He has conducted over 200 user research sessions including diary studies, contextual inquiries, and usability tests across 5 countries. He is the creator of 'ResearchOps Playbook', an open-source toolkit for running user research at scale that is used by design teams at Adobe, Figma, and Microsoft. Oluwaseun holds a Master's in Human-Computer Interaction from Carnegie Mellon University and a Bachelor's in Psychology from University of Lagos. He writes extensively about research methodologies on Medium and his article 'How to Interview Users Without Leading Them' has been featured in the Nielsen Norman Group newsletter. He speaks at UXPA, Interactions, and Design Research Society conferences about research operations and cross-cultural design. Oluwaseun is passionate about designing for emerging markets and has written a whitepaper on mobile UX patterns for African users. He is a co-organizer of the Lagos Design Meetup and mentors aspiring UX researchers through the Interaction Design Foundation. He lives in Stockholm but travels back to Lagos quarterly to teach design workshops. He is known within Spotify for his thorough research readouts — his presentations include video clips, verbatim quotes, and statistical significance testing. He is a strong advocate for quantitative UX methods and believes that 'design without data is decoration'. Oluwaseun is active on LinkedIn where he posts weekly about research findings and design ethics. He has a side project called 'Designing for Dignity', a podcast interviewing designers who work on products for underserved communities. Outside of work, he is an amateur photographer who specializes in street photography and has a small exhibition coming up at a local gallery."
+    },
+    "expectedOutputs": {
+      "minFacts": 13,
+      "keySignals": ["UX research specialization", "open source contributor", "conference speaker", "community leader", "accessibility advocate"],
+      "expectedScores": {
+        "builderScore": { "min": 25, "max": 50 },
+        "operatorScore": { "min": 30, "max": 55 },
+        "creatorScore": { "min": 70, "max": 95 },
+        "founderScore": { "min": 30, "max": 55 },
+        "chaosScore": { "min": 10, "max": 35 }
+      }
+    }
+  },
+  {
+    "id": "designer-3",
+    "name": "Creative Director",
+    "description": "Agency background, branding",
+    "input": {
+      "linkedinUrl": "https://linkedin.com/in/chloe-desmond-creative",
+      "githubUrl": "https://github.com/chloed Desmond",
+      "twitterUrl": "https://x.com/chloe_designs",
+      "rawProfileText": "Chloe Desmond is a Creative Director with 15 years of experience leading brand identity and visual design for global brands. She is currently the VP of Design at Stripe, where she oversees the visual identity team and led the controversial 2024 rebrand that replaced Stripe's signature gradient with a new visual language based on geometric abstraction. Before Stripe, she spent 8 years at Pentagram as a partner where she led branding projects for Airbnb's visual identity evolution, Patagonia's outdoor equity campaign, and the Obama Foundation's brand guidelines. She started her career at Wolff Olins in London working on the AOL rebrand (which she now calls 'my teenage rebellion phase'). Chloe holds a BA in Graphic Design from Central Saint Martins in London. She is known for her distinctive aesthetic that blends Swiss design principles with bold typography and unexpected color palettes. She has deep expertise in brand strategy, naming, visual identity, packaging, and environmental design. Chloe's work has been featured in Communication Arts, Design Week, and the Cooper Hewitt Design Museum, which acquired several of her brand guidelines for their permanent collection. She speaks at AIGA, Design Indaba, and Brand New Conference about the intersection of brand and product design. She is the author of 'The Identity Stack: Building Brands That Scale' — a book about systematic brand design that was published by MIT Press and has sold 30,000 copies. Chloe is an investor and advisor to several design tool startups including Penpot and Visly. She is known for having a 'typo radar' — she once redesigned a restaurant menu at dinner because the kerning was offensive. She collects vintage typography posters and has an extensive collection of Helvetica specimens from the 1960s. On Twitter, she posts brutal critiques of corporate rebrands and has started heated debates about whether Comic Sans should be reclaimed. She describes her management style as 'benevolent dictatorship' and has a reputation for pushing designers to their creative limits. She mentors young women entering the design industry through the Ladies, Wine & Design network. She lives in Brooklyn with her French bulldog named 'Grid System'."
+    },
+    "expectedOutputs": {
+      "minFacts": 14,
+      "keySignals": ["design leader", "conference speaker", "author", "branding expert", "investor"],
+      "expectedScores": {
+        "builderScore": { "min": 35, "max": 60 },
+        "operatorScore": { "min": 50, "max": 75 },
+        "creatorScore": { "min": 85, "max": 100 },
+        "founderScore": { "min": 45, "max": 70 },
+        "chaosScore": { "min": 25, "max": 50 }
+      }
+    }
+  },
+  {
+    "id": "designer-4",
+    "name": "Freelance Designer",
+    "description": "Multi-disciplinary, independent",
+    "input": {
+      "linkedinUrl": "https://linkedin.com/in/raj-patel-freelance",
+      "githubUrl": "https://github.com/rajpatel",
+      "twitterUrl": "https://x.com/raj_makes_things",
+      "rawProfileText": "Raj Patel is a multi-disciplinary freelance designer who has been running his own studio for 6 years. He specializes in brand identity, web design, illustration, and motion graphics for early-stage startups and small businesses. Raj works with 15-20 clients per year and has designed brands for 3 Y Combinator startups, 2 Techstars companies, and a handful of indie SaaS products including the popular note-taking app 'Memos'. His typical project ranges from $5k-$25k and he maintains a 95% referral rate. Before going freelance, Raj worked as an in-house designer at a marketing agency for 3 years and at a fast-fashion e-commerce company where he designed email campaigns and social media assets. He taught himself design through YouTube tutorials while working a night shift at a hotel front desk. Raj is proficient in Figma, After Effects, Illustrator, Photoshop, Blender, and Webflow. He has a side project called 'Freelance Wizard', a Notion template for managing freelance business operations that has been purchased by 3,000+ designers and generates $2k/month passive income. He maintains a blog and YouTube channel called 'The Solo Designer' where he shares his invoices, client acquisition strategies, and project breakdowns. His videos average 15,000 views and he has a tight-knit community of 4,000 subscribers. Raj is active on Dribbble where his shots have been featured on the homepage 12 times, and he has 8,000 followers. He is extremely organized about his finances — he uses a custom spreadsheet to track every hour, expense, and tax deduction, which he has shared publicly. Raj is vocal about the gig economy and writes threads about how to negotiate with clients and avoid scope creep. He once fired a client who asked for 7 rounds of revisions on a logo and has never regretted it. His portfolio website is a showcase of his principles — it has no contact form because 'if you want to work with me, you'll figure out how to email me'. He is based in Austin, Texas, and works from a co-working space called 'Creatives' where he is the defacto tech support person. He is currently writing a book called 'The Reluctant Businessperson: A Designer's Guide to Getting Paid'. In his free time, Raj experiments with generative art in p5.js and has sold a few NFT pieces."
+    },
+    "expectedOutputs": {
+      "minFacts": 14,
+      "keySignals": ["freelancer", "multi-disciplinary designer", "content creator", "indie maker"],
+      "expectedScores": {
+        "builderScore": { "min": 40, "max": 65 },
+        "operatorScore": { "min": 50, "max": 75 },
+        "creatorScore": { "min": 75, "max": 100 },
+        "founderScore": { "min": 40, "max": 65 },
+        "chaosScore": { "min": 20, "max": 45 }
+      }
+    }
+  },
+  {
+    "id": "designer-5",
+    "name": "Design Engineer",
+    "description": "Codes and designs",
+    "input": {
+      "linkedinUrl": "https://linkedin.com/in/yuki-tanaka-design-engineer",
+      "githubUrl": "https://github.com/yukitanaka",
+      "twitterUrl": "https://x.com/yuki_eng_design",
+      "rawProfileText": "Yuki Tanaka is a Design Engineer at Vercel with 6 years of experience bridging the gap between design and engineering. She works on the Next.js documentation site and Vercel's marketing pages, building high-fidelity prototypes that ship directly to production. She created the animation library used across Vercel's product surfaces called 'Geist Motion' that is used by 500+ design engineers. Before Vercel, she was a design engineer at Linear where she was the first hire on their design systems team and built their component library from scratch using Radix UI and Tailwind. She started her career as a frontend developer at a design agency, then transitioned to full-stack development before finding her niche at the intersection of design and code. Yuki is proficient in TypeScript, React, Three.js, Framer Motion, and Tailwind CSS, and she uses Figma fluently. She maintains 'Motion Gallery', an open-source collection of UI animations and micro-interactions with 3,500 stars on GitHub. She also contributes to the Framer Motion project and has merged several PRs for improved spring animations. Yuki speaks at React Conf, Figma Config, and Smashing Conference about the emerging discipline of design engineering, how to build animation systems that scale, and why the divide between design and engineering is artificial. She wrote a comprehensive guide 'The Design Engineering Handbook' which was self-published and has sold 12,000 copies. Yuki writes a popular blog and newsletter called 'Easing Curves' where she dives into the technical details of UI animation, CSS layout, and design implementation. She has 11,000 subscribers. She is known for her incredible attention to detail — she once recorded a Loom video explaining why a 50ms delay in a hover animation was ruining the user experience and her pull request was merged the same day. Yuki has strong opinions about Tailwind being both the best and worst thing to happen to CSS. She is an advocate for what she calls 'progressive disclosure of complexity' in design tools. She lives in Tokyo and works remotely, maintaining strict async hours. She is learning Rust to build a design tool CLI and has a side project called 'Token Forge' that generates design tokens from Figma variables. On Twitter, she posts short videos comparing animation implementations in CSS, JavaScript, and Framer Motion, and runs a weekly poll asking people to identify which micro-interaction has the right easing curve."
+    },
+    "expectedOutputs": {
+      "minFacts": 14,
+      "keySignals": ["design engineering", "open source contributor", "conference speaker", "technical writer", "animation expert"],
+      "expectedScores": {
+        "builderScore": { "min": 55, "max": 80 },
+        "operatorScore": { "min": 30, "max": 55 },
+        "creatorScore": { "min": 80, "max": 100 },
+        "founderScore": { "min": 35, "max": 60 },
+        "chaosScore": { "min": 15, "max": 40 }
+      }
+    }
+  }
+]

@@ -1,0 +1,112 @@
+[
+  {
+    "id": "dev-1",
+    "name": "Senior Full-Stack Developer",
+    "description": "10+ years experience, multiple languages, team lead",
+    "input": {
+      "linkedinUrl": "https://linkedin.com/in/marcus-chen-dev",
+      "githubUrl": "https://github.com/marcuschen",
+      "twitterUrl": "https://x.com/marcus_codes",
+      "rawProfileText": "Marcus Chen is a senior full-stack developer with 12 years of professional experience building distributed systems and web applications. He started his career at a digital agency building WordPress sites, quickly moved to a Series A startup where he owned the entire backend infrastructure, then spent 4 years at Shopify as a Staff Engineer working on the checkout pipeline serving millions of transactions daily. Currently he is a Tech Lead at Vercel, leading the edge compute team. He is proficient in TypeScript, Go, Rust, and Python. Marcus is the creator of a popular open-source rate-limiting library for Node.js called 'bottleneck' with 6,000+ GitHub stars. He writes extensively about system design on his blog 'Latency Is The Enemy' and has given talks at KubeCon, ReactConf, and AWS re:Invent. He contributes to the Deno project and has several RFCs merged into the TC39 specification for standardizing scheduling primitives. Marcus holds a B.S. in Computer Science from University of Waterloo with a minor in Philosophy. He is an avid mechanical keyboard enthusiast and maintains a home lab with Kubernetes cluster running on Raspberry Pis. He was an early employee at a YC-backed startup that was acquired by Stripe. Marcus mentors first-generation college students through CodePath and serves on the technical advisory board for a climate tech startup. He is currently learning about WebAssembly component models and contributing to the Bytecode Alliance. He has a YouTube channel where he does architecture deep-dives and has amassed 15,000 subscribers. Marcus is known for his brutally honest code reviews and a particular hatred of unnecessary abstractions. He once rewrote his team's entire microservice architecture over a weekend after a particularly bad incident with a monorepo. He drinks pour-over coffee and runs ultramarathons. He keeps a blog post titled 'Why I Will Never Use Kubernetes in Production' but has worked on k8s infrastructure at every job since 2018."
+    },
+    "expectedOutputs": {
+      "minFacts": 14,
+      "keySignals": ["strong technical background", "open source contributor", "conference speaker", "community leader"],
+      "expectedScores": {
+        "builderScore": { "min": 75, "max": 100 },
+        "operatorScore": { "min": 60, "max": 90 },
+        "creatorScore": { "min": 50, "max": 80 },
+        "founderScore": { "min": 40, "max": 70 },
+        "chaosScore": { "min": 30, "max": 60 }
+      }
+    }
+  },
+  {
+    "id": "dev-2",
+    "name": "Junior Frontend Developer",
+    "description": "2 years experience, React specialist, bootcamp grad",
+    "input": {
+      "linkedinUrl": "https://linkedin.com/in/sarah-mitchell-dev",
+      "githubUrl": "https://github.com/sarahmitchell",
+      "twitterUrl": "https://x.com/sarah_codes",
+      "rawProfileText": "Sarah Mitchell is a frontend developer with 2 years of professional experience. She graduated from a 12-week coding bootcamp at Hack Reactor in 2022 after leaving a career in graphic design where she worked for 4 years at a print shop. She is now a Junior Frontend Engineer at a Series B fintech startup called Pennywise, where she works on the React component library and customer-facing dashboards. Her tech stack is primarily React, TypeScript, Next.js, and Tailwind CSS. She recently built a real-time budgeting widget that increased user engagement by 15%. Sarah is active in the React community and has contributed to the Radix UI accessibility documentation. She maintains a small open-source project called 'color-harmony' that generates accessible color palettes for UI designers, which has around 200 stars on GitHub. She writes tutorials on Dev.to about CSS Grid and state management in React, with her most popular post 'Understanding useReducer: When useState Isn't Enough' getting over 8,000 views. She is currently learning about backend development with Node.js and has built a few simple Express APIs. Sarah attends her local React meetup regularly and gave her first lightning talk last month about responsive typography. She is a self-taught illustrator and designs her own stickers and enamel pins themed around programming puns. She posts consistently on Twitter about her learning journey and recently hit 2,000 followers. She dreams of becoming a senior engineer and eventually a staff engineer at a FAANG company. She contributes to open source by fixing small bugs in documentation and has 42 contributions on GitHub this year. Sarah is incredibly detail-oriented about UI polish — she once spent an entire sprint fixing a single pixel misalignment across 12 different viewport sizes. She religiously watches Theo's YouTube channel and has strong opinions about Tailwind vs CSS Modules. She is currently preparing for System Design interviews by watching hour-long videos from ByteByteGo."
+    },
+    "expectedOutputs": {
+      "minFacts": 12,
+      "keySignals": ["frontend specialization", "career transitioner", "community engager", "design background"],
+      "expectedScores": {
+        "builderScore": { "min": 40, "max": 65 },
+        "operatorScore": { "min": 20, "max": 45 },
+        "creatorScore": { "min": 55, "max": 80 },
+        "founderScore": { "min": 25, "max": 50 },
+        "chaosScore": { "min": 15, "max": 40 }
+      }
+    }
+  },
+  {
+    "id": "dev-3",
+    "name": "Open Source Maintainer",
+    "description": "Major OSS contributor, conference speaker, technical writer",
+    "input": {
+      "linkedinUrl": "https://linkedin.com/in/priya-sharma-oss",
+      "githubUrl": "https://github.com/priyasharma",
+      "twitterUrl": "https://x.com/priya_dev",
+      "rawProfileText": "Priya Sharma is a prominent open source maintainer and software engineer with 8 years of experience. She is the creator and lead maintainer of 'FastQL', a GraphQL caching layer used by over 2,000 organizations including几家 Fortune 500 companies, with 14,000 stars on GitHub. She also serves as a core contributor to the Apollo GraphQL ecosystem and is a member of the GraphQL Foundation's technical steering committee. Priya works as a Developer Experience Engineer at Apollo GraphQL, where she builds tools and documentation for the GraphQL community. She previously worked at Airbnb as a senior engineer on the data platform team and at Hasura as a solutions architect. She has spoken at GraphQLConf, React Conf, JSConf, and All Things Open about GraphQL performance optimization, open source sustainability, and building developer communities. Priya writes extensive technical documentation and was a Google Season of Docs mentor for two consecutive years. She maintains an popular blog called 'GraphQL Weekly' with 12,000 subscribers where she curates the best GraphQL content and writes deep-dive posts. She is a Docker Captain and has contributed to the Docker Compose specification. Priya holds a B.Tech in Computer Science from Indian Institute of Technology Bombay. She is active in open source diversity initiatives and co-founded 'OSS Sisters', a mentorship program for women and non-binary contributors to open source. She has received the GitHub Star award twice and was named in the Forbes 30 Under 30 list for Enterprise Technology. Priya lives in Bangalore with her two cats named 'Commit' and 'Push'. She is deeply passionate about technical writing and believes documentation is a form of product development. She has authored 20+ RFCs and design documents for various open source projects. In her spare time, she maintains a curated list of GraphQL resources that has over 2,500 stars. She has a love-hate relationship with npm and has strong opinions about package management. Her Twitter timeline is a mix of GraphQL memes, open source sustainability hot takes, and threads about the challenges of maintaining popular OSS projects. She once resolved a 3-year-old GitHub issue in 15 minutes because the fix was 'a single semicolon in the wrong place'."
+    },
+    "expectedOutputs": {
+      "minFacts": 15,
+      "keySignals": ["open source contributor", "conference speaker", "community leader", "technical writer", "strong technical background"],
+      "expectedScores": {
+        "builderScore": { "min": 70, "max": 95 },
+        "operatorScore": { "min": 40, "max": 65 },
+        "creatorScore": { "min": 75, "max": 100 },
+        "founderScore": { "min": 50, "max": 75 },
+        "chaosScore": { "min": 20, "max": 45 }
+      }
+    }
+  },
+  {
+    "id": "dev-4",
+    "name": "DevOps/SRE Engineer",
+    "description": "Infrastructure focused, Kubernetes expert, automation enthusiast",
+    "input": {
+      "linkedinUrl": "https://linkedin.com/in/jordan-taylor-sre",
+      "githubUrl": "https://github.com/jordanops",
+      "twitterUrl": "https://x.com/terraform_jordan",
+      "rawProfileText": "Jordan Taylor is a Site Reliability Engineer with 9 years of experience in infrastructure and platform engineering. He currently works at Cloudflare as a Staff SRE on the edge networking team, responsible for maintaining 99.999% uptime across 300+ data centers worldwide. He previously worked at DigitalOcean as a Senior Infrastructure Engineer where he built their managed Kubernetes offering from scratch, and at Netflix as a Chaos Engineering contractor where he helped run the Simian Army. Jordan is a Kubernetes contributor with 500+ commits to the core project and a maintainer of the Cluster API project. He wrote the AWS Terraform provider's EKS module and holds the CKA, CKAD, and CKS certifications. He is also certified as an AWS Solutions Architect Professional and a Google Professional Cloud Architect. Jordan maintains a popular open-source tool called 'kubetail' for multi-pod log tailing in Kubernetes with 4,500 stars. He is passionate about infrastructure as code and automation, and has strong opinions about immutable infrastructure. He gave a memorable keynote at KubeCon NA 2023 titled 'Your Infrastructure Is Haunted — Exorcising Legacy Configs with GitOps'. Jordan writes a monthly newsletter called 'The Infra Pub' with 8,000 subscribers covering cloud native topics. He has a home lab running a 12-node Proxmox cluster with redundant networking and a homelab Kubernetes cluster that mirrors his production setup. He monitors his home lab with Prometheus and Grafana and gets visibly upset when his home internet goes down because it breaks his SLA. Jordan is an early adopter of Rust for infrastructure tooling and is contributing to the 'krustlet' project for running WebAssembly on Kubernetes. He has deep knowledge of Linux kernel internals and has submitted patches to the kernel for better cgroup v2 support. He drinks an alarming amount of black coffee, uses tmux with a custom status bar that would make most people cry, and writes all his configuration as code — including his dotfiles which are managed via Nix and have their own CI pipeline. He believes that anything worth doing is worth automating and has a cron job that orders his groceries."
+    },
+    "expectedOutputs": {
+      "minFacts": 14,
+      "keySignals": ["strong technical background", "open source contributor", "conference speaker", "infrastructure specialist", "automation advocate"],
+      "expectedScores": {
+        "builderScore": { "min": 70, "max": 95 },
+        "operatorScore": { "min": 80, "max": 100 },
+        "creatorScore": { "min": 40, "max": 65 },
+        "founderScore": { "min": 35, "max": 60 },
+        "chaosScore": { "min": 25, "max": 50 }
+      }
+    }
+  },
+  {
+    "id": "dev-5",
+    "name": "Mobile Developer",
+    "description": "iOS/Android, indie app developer, Swift/Kotlin",
+    "input": {
+      "linkedinUrl": "https://linkedin.com/in/elena-rios-mobile",
+      "githubUrl": "https://github.com/elenarios",
+      "twitterUrl": "https://x.com/elenamakesapps",
+      "rawProfileText": "Elena Rios is a mobile developer with 6 years of experience building native iOS and Android applications. She currently works as a Senior Mobile Engineer at Headspace, where she leads the iOS meditation experience team and works on mindfulness features used by millions of users daily. She previously worked at Duolingo as a mobile engineer on the streak and gamification features, and at a small startup called PlantNanny that built IoT-connected plant watering reminders. Elena is proficient in Swift, SwiftUI, Kotlin, and Jetpack Compose. She is the creator of 'Mindful Minutes', a popular open-source Swift library for tracking user focus sessions with over 800 stars. She also maintains a Kotlin Multiplatform module for shared networking logic that is used by several indie developers. Elena is a published indie developer with two apps on the App Store: 'Tally — Habit Tracker' with 50,000 downloads and 4.7 stars, and 'Wavelength' — a color-based meditation timer that she built as a side project during a mental health break. She writes about iOS development on her Substack 'Swiftly Forward' and has 3,000 subscribers. She has spoken at try! Swift, SwiftLeeds, and Droidcon about building accessible mobile experiences and the challenges of maintaining side projects while working full-time. Elena is passionate about accessibility in mobile apps and has contributed to Apple's accessibility documentation. She holds a B.S. in Computer Science from UC Berkeley with a focus in Human-Computer Interaction. She is a mentor for Apple's Entrepreneur Camp for female founders and app developers. Elena is an extremely organized person who color-codes her entire life in Notion and has a Kanban board for her personal goals. She is a dog person who posts frequent pictures of her corgi 'Pixel' on her developer Twitter account. Elena has strong opinions about SwiftUI vs UIKit and writes long threads comparing navigation stacks. She once submitted an app update at 2 AM from a coffee shop in Tokyo while on vacation because she noticed a critical bug. She is learning Flutter despite claiming she never would. She believes Core Data is a war crime and uses Realm instead. She has a tattoo of the Swift logo on her ankle that she got after her first WWDC."
+    },
+    "expectedOutputs": {
+      "minFacts": 13,
+      "keySignals": ["mobile specialization", "indie developer", "open source contributor", "conference speaker", "accessible design advocate"],
+      "expectedScores": {
+        "builderScore": { "min": 60, "max": 85 },
+        "operatorScore": { "min": 30, "max": 55 },
+        "creatorScore": { "min": 65, "max": 90 },
+        "founderScore": { "min": 45, "max": 70 },
+        "chaosScore": { "min": 20, "max": 45 }
+      }
+    }
+  }
+]
