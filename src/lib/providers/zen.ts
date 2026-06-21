@@ -26,7 +26,6 @@ export class ZenProvider extends BaseProvider {
         messages: request.messages,
         temperature: request.temperature ?? this.config.temperature ?? 0.7,
         max_tokens: request.maxTokens ?? this.config.maxTokens ?? 8192,
-        stream: false,
       });
 
       const response = await fetch(url, {
@@ -38,12 +37,20 @@ export class ZenProvider extends BaseProvider {
         body,
       });
 
+      const rawText = await response.text();
+
       if (!response.ok) {
-        const errText = await response.text().catch(() => "Unknown error");
-        throw new Error(`HTTP ${response.status}: ${errText.slice(0, 300)}`);
+        throw new Error(`HTTP ${response.status}: ${rawText.slice(0, 300)}`);
       }
 
-      const data = await response.json();
+      let data: any;
+      try {
+        data = JSON.parse(rawText);
+      } catch {
+        throw new Error(
+          `API returned status ${response.status} with non-JSON body: "${rawText.slice(0, 200)}"`,
+        );
+      }
 
       if (!data.choices || !Array.isArray(data.choices) || !data.choices[0]) {
         const errMsg = `API returned no choices. Response: ${JSON.stringify(data).slice(0, 500)}`;
@@ -80,7 +87,13 @@ export class ZenProvider extends BaseProvider {
       return [];
     }
 
-    const data = await response.json();
+    let data: any;
+    try {
+      data = await response.json();
+    } catch {
+      return [];
+    }
+
     return (data.data || []).map((m: any) => m.id);
   }
 }
