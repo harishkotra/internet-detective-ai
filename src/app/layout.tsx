@@ -8,13 +8,13 @@ import { PostHogProvider } from "./posthog-provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Internet Detective AI - We Analyzed Your Entire Internet Personality",
+  title: "Internet Detective AI — AI-Powered Personality Investigation Report",
   description:
-    "Paste your LinkedIn, GitHub, Twitter — get a brutally honest AI investigation of your entire internet personality.",
+    "Paste your LinkedIn, GitHub, Twitter, or resume. Our AI analyzes your online footprint and generates a detailed personality report with career predictions, personality scores, and more.",
   openGraph: {
     title: "Internet Detective AI",
     description:
-      "We analyzed your entire internet personality. Paste your profile. Get roasted.",
+      "Get an AI-generated personality investigation report from your online profiles.",
   },
 };
 

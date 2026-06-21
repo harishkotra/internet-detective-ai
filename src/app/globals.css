@@ -129,46 +129,6 @@
   }
 }
 
-@utility text-gradient {
-  background: linear-gradient(to right, oklch(0.6 0.2 280), oklch(0.6 0.2 200), oklch(0.6 0.2 150));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-@utility text-gradient-viral {
-  background: linear-gradient(135deg, oklch(0.7 0.3 310), oklch(0.7 0.3 240), oklch(0.5 0.25 170));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-@utility glow {
-  box-shadow: 0 0 40px oklch(0.5 0.2 260 / 0.15), 0 0 80px oklch(0.5 0.2 260 / 0.1);
-}
-
-@utility glow-intense {
-  box-shadow: 0 0 60px oklch(0.6 0.25 280 / 0.25), 0 0 120px oklch(0.5 0.2 240 / 0.15);
-}
-
-@utility bg-grid {
-  background-image:
-    linear-gradient(to right, oklch(1 0 0 / 0.03) 1px, transparent 1px),
-    linear-gradient(to bottom, oklch(1 0 0 / 0.03) 1px, transparent 1px);
-  background-size: 60px 60px;
-}
-
-@utility bg-grid-bright {
-  background-image:
-    linear-gradient(to right, oklch(1 0 0 / 0.06) 1px, transparent 1px),
-    linear-gradient(to bottom, oklch(1 0 0 / 0.06) 1px, transparent 1px);
-  background-size: 40px 40px;
-}
-
-@utility bg-radial-gradient {
-  background: radial-gradient(ellipse 80% 50% at 50% -20%, oklch(0.4 0.15 260 / 0.3), transparent);
-}
-
 @utility animate-float {
   animation: float 6s ease-in-out infinite;
 }

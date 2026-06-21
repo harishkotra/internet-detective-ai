@@ -33,9 +33,7 @@ const sampleRoast = [
 export function ExampleReport() {
   return (
     <section className="relative w-full px-4 py-24">
-      <div className="pointer-events-none absolute inset-0 bg-grid" />
-
-      <div className="relative z-10 mx-auto max-w-4xl">
+      <div className="mx-auto max-w-4xl">
         <div className="mb-12 text-center">
           <Badge
             variant="outline"
@@ -43,7 +41,7 @@ export function ExampleReport() {
           >
             Example Report
           </Badge>
-          <h2 className="text-gradient text-3xl font-bold tracking-tight sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
             What you&apos;ll get
           </h2>
           <p className="mt-3 text-white/40">
@@ -52,7 +50,7 @@ export function ExampleReport() {
         </div>
 
         <div className="grid gap-6 md:grid-cols-2">
-          <Card className="border-white/5 bg-white/[0.03] backdrop-blur-sm">
+          <Card className="border-white/5 bg-white/[0.03]">
             <CardHeader>
               <CardTitle className="flex items-center gap-2 text-sm font-medium text-white">
                 <span className="flex size-5 items-center justify-center rounded bg-white/10 text-[10px]">
@@ -82,7 +80,7 @@ export function ExampleReport() {
             </CardContent>
           </Card>
 
-          <Card className="border-white/5 bg-white/[0.03] backdrop-blur-sm">
+          <Card className="border-white/5 bg-white/[0.03]">
             <CardHeader>
               <CardTitle className="flex items-center gap-2 text-sm font-medium text-white">
                 <span className="flex size-5 items-center justify-center rounded bg-white/10 text-[10px]">
@@ -113,7 +111,7 @@ export function ExampleReport() {
             </CardContent>
           </Card>
 
-          <Card className="border-white/5 bg-white/[0.03] backdrop-blur-sm md:col-span-2">
+          <Card className="border-white/5 bg-white/[0.03] md:col-span-2">
             <CardHeader>
               <CardTitle className="flex items-center gap-2 text-sm font-medium text-white">
                 <span className="flex size-5 items-center justify-center rounded bg-white/10 text-[10px]">

@@ -88,9 +88,7 @@ export function InvestigationForm() {
       id="investigation-form"
       className="relative flex w-full justify-center px-4 py-24"
     >
-      <div className="pointer-events-none absolute inset-0 bg-grid-bright" />
-
-      <Card className="glow relative z-10 w-full max-w-2xl border-white/10 bg-black/80 backdrop-blur-xl">
+      <Card className="relative z-10 w-full max-w-2xl border-white/10 bg-white/[0.02]">
         <CardHeader>
           <div className="flex items-center gap-2">
             <div className="flex size-8 items-center justify-center rounded-lg bg-white/10">
@@ -171,7 +169,7 @@ export function InvestigationForm() {
               type="submit"
               disabled={!hasAnyInput || loading}
               size="lg"
-              className="glow h-11 w-full cursor-pointer rounded-xl bg-white font-semibold text-black transition-all hover:bg-white/90 hover:glow-intense disabled:opacity-30"
+              className="h-11 w-full cursor-pointer rounded-xl bg-white font-semibold text-black transition-all hover:bg-white/90 disabled:opacity-30"
             >
               {loading ? (
                 <>

@@ -87,9 +87,7 @@ const features: Feature[] = [
 export function FeaturesSection() {
   return (
     <section className="relative w-full px-4 py-24">
-      <div className="pointer-events-none absolute inset-0 bg-radial-gradient" />
-
-      <div className="relative z-10 mx-auto max-w-6xl">
+      <div className="mx-auto max-w-6xl">
         <div className="mb-16 text-center">
           <Badge
             variant="outline"
@@ -97,7 +95,7 @@ export function FeaturesSection() {
           >
             Full Investigation Report
           </Badge>
-          <h2 className="text-gradient text-3xl font-bold tracking-tight sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
             Every angle. No mercy.
           </h2>
           <p className="mt-3 text-white/40">
@@ -111,7 +109,7 @@ export function FeaturesSection() {
             return (
               <Card
                 key={feature.title}
-                className="group border-white/5 bg-white/[0.03] backdrop-blur-sm transition-all hover:border-white/10 hover:bg-white/[0.06]"
+                className="group border-white/5 bg-white/[0.03] transition-all hover:border-white/10 hover:bg-white/[0.06]"
               >
                 <CardHeader>
                   <div className="mb-2 flex size-9 items-center justify-center rounded-lg bg-white/5 group-hover:bg-white/10">
