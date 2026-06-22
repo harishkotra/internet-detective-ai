@@ -71,7 +71,8 @@ function loadConfig(): Record<ProviderType, ProviderRegistration> {
             apiKey: process.env.OPENROUTER_API_KEY,
             baseUrl: "https://openrouter.ai/api/v1",
             defaultModel:
-              process.env.OPENROUTER_MODEL || "openai/gpt-oss-120b:free",
+              process.env.OPENROUTER_MODEL ||
+              "meta-llama/llama-3.3-70b-instruct:free",
             maxTokens: 8192,
             temperature: 0.7,
           }

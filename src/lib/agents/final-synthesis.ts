@@ -106,7 +106,6 @@ export class FinalSynthesisAgent extends BaseAgent {
       description:
         "Combines all agent outputs into the final InvestigationReport",
       systemPrompt: SYSTEM_PROMPT,
-      model: "gpt-4o",
       temperature: 0.5,
     };
     super(config);

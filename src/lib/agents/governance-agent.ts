@@ -61,7 +61,6 @@ export class GovernanceAgent extends BaseAgent {
       name: "Governance Agent",
       description: "Validates outputs against ethical guidelines",
       systemPrompt: SYSTEM_PROMPT,
-      model: "gpt-4o",
       temperature: 0.2,
     };
     super(config);

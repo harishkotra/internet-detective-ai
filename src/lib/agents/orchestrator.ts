@@ -24,6 +24,7 @@ export class InvestigationOrchestrator {
   private roastAgent: RoastAgent;
   private governanceAgent: GovernanceAgent;
   private finalSynthesis: FinalSynthesisAgent;
+  private callCount = 0;
 
   constructor() {
     this.profileAnalyst = new ProfileAnalystAgent();
@@ -158,10 +159,16 @@ export class InvestigationOrchestrator {
     };
   }
 
+  private agentIndex = -1;
+
   private async runAgent(
     agent: BaseAgent,
     input: any,
   ): Promise<{ output: any; trace: AgentTrace }> {
+    if (this.callCount > 0) {
+      await new Promise((r) => setTimeout(r, 15_000));
+    }
+    this.callCount++;
     const result = await agent.process(input);
     return { output: result.output, trace: result.trace };
   }

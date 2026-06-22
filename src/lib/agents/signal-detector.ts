@@ -82,7 +82,6 @@ export class SignalDetectorAgent extends BaseAgent {
       description:
         "Detects patterns and evidence-based inferences from profile data",
       systemPrompt: SYSTEM_PROMPT,
-      model: "gpt-4o",
       temperature: 0.4,
     };
     super(config);

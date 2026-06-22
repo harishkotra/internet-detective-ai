@@ -47,7 +47,6 @@ export class StartupGeneratorAgent extends BaseAgent {
       name: "Startup Generator",
       description: "Creates a humorous but evidence-based startup parody",
       systemPrompt: SYSTEM_PROMPT,
-      model: "gpt-4o",
       temperature: 0.8,
     };
     super(config);

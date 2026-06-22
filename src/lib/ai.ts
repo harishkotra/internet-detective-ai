@@ -45,7 +45,7 @@ export class AIService {
     ];
 
     const request: ChatCompletionRequest = {
-      model: model || this.getDefaultModel(),
+      model: model || "",
       messages,
       temperature: options.temperature,
       maxTokens: options.maxTokens,
@@ -114,32 +114,40 @@ export class AIService {
   async chatJSON<T>(
     options: AIRequestOptions,
   ): Promise<{ parsed: T; trace: AgentTrace }> {
-    const jsonOptions: AIRequestOptions = {
-      ...options,
-      responseFormat: "json_object",
-    };
+    const maxAttempts = 2;
 
-    const response = await this.chat(jsonOptions);
+    for (let attempt = 0; attempt < maxAttempts; attempt++) {
+      const response = await this.chat(options);
 
-    if (!response.trace.success) {
-      throw new Error(`AI chat failed: ${response.trace.error}`);
+      if (!response.trace.success) {
+        throw new Error(`AI chat failed: ${response.trace.error}`);
+      }
+
+      const extractJson = (text: string): string => {
+        const firstBrace = text.indexOf("{");
+        const lastBrace = text.lastIndexOf("}");
+        if (firstBrace === -1 || lastBrace === -1 || lastBrace <= firstBrace) {
+          return text.trim();
+        }
+        return text.slice(firstBrace, lastBrace + 1);
+      };
+
+      const cleaned = extractJson(response.content);
+
+      try {
+        const parsed = JSON.parse(cleaned) as T;
+        return { parsed, trace: response.trace };
+      } catch {
+        if (attempt < maxAttempts - 1) {
+          continue;
+        }
+        throw new Error(
+          `Failed to parse JSON response after ${maxAttempts} attempts: ${response.content.slice(0, 500)}`,
+        );
+      }
     }
 
-    const cleaned = response.content
-      .replace(/```json\s*/gi, "")
-      .replace(/```\s*$/g, "")
-      .trim();
-
-    let parsed: T;
-    try {
-      parsed = JSON.parse(cleaned) as T;
-    } catch (parseError) {
-      throw new Error(
-        `Failed to parse JSON response: ${parseError instanceof Error ? parseError.message : String(parseError)}\nRaw content: ${response.content}`,
-      );
-    }
-
-    return { parsed, trace: response.trace };
+    throw new Error("Unreachable");
   }
 
   setProvider(provider: ProviderAdapter): void {
@@ -155,10 +163,8 @@ export class AIService {
   }
 
   private getDefaultModel(): string {
-    return ProviderFactory.createProvider(this.provider.name).name ===
-      this.provider.name
-      ? "gpt-4o"
-      : "gpt-4o";
+    const envVar = `${this.provider.name.toUpperCase()}_MODEL`;
+    return process.env[envVar] || "gpt-4o";
   }
 }
 

@@ -67,7 +67,6 @@ export class RoastAgent extends BaseAgent {
       name: "Roast Agent",
       description: "Creates playful, humorous roasts and coworker quotes",
       systemPrompt: SYSTEM_PROMPT,
-      model: "gpt-4o",
       temperature: 0.9,
     };
     super(config);

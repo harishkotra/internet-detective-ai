@@ -46,7 +46,6 @@ export class CareerPredictorAgent extends BaseAgent {
       description:
         "Predicts future career trajectory based on detected signals",
       systemPrompt: SYSTEM_PROMPT,
-      model: "gpt-4o",
       temperature: 0.5,
     };
     super(config);

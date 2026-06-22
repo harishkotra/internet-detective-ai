@@ -50,7 +50,6 @@ export class ProfileAnalystAgent extends BaseAgent {
       name: "Profile Analyst",
       description: "Extracts structured facts from normalized profile data",
       systemPrompt: SYSTEM_PROMPT,
-      model: "gpt-4o",
       temperature: 0.3,
     };
     super(config);
